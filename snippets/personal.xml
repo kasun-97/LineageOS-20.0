@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	  <remote  name="personal"
+		            fetch="https://github.com/kasun-97"
+		            revision="refs/heads/los-20" />
+
+	  <!-- My Repos -->		  
+	  <project path="bionic" name="android_bionic" groups="pdk" remote="personal" />
+	  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="personal" />
+	  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="personal" />
+</manifest>

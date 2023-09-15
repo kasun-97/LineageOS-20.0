@@ -1,36 +1,56 @@
-LineageOS
+LineageOS-20.0
 ===========
+
+Description
+---------------
+This LineageOS (LOS) fork is for my personal builds for Redmi Note 10 Pro (sweet). But feel free to build for yourself. Automated build script is for building for sweet only. If you have a different device you have to change local manifest according to your device.
+
+Difference between LOS official repo and this repo?
+---------------
+
+There are some changes we need to make to a ROM source in order to add some useful features. But, LOS official will never merge those changes so we have to do it ourselves. In my case for sweet, I needed to make MiUi camera work on the official LOS ROM. I may add some useful features in the future when I have time. But this repo will be updated alongeside official LOS updates regardless adding additions. Below is a list of extra features I have currently added.  
+
+- Added support for MiUI camera.
+
 
 Getting started
 ---------------
 
-To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
-
 To initialize your local repository using the LineageOS trees, use a command like this:
 ```
-repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
+repo init -u https://github.com/kasun-97/LineageOS-20.0.git -b los-20 --git-lfs
 ```
 Then to sync up:
 ```
 repo sync
 ```
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
 
+Build automatically
+---------------
 
-Submitting patches
-------------------
-Patches are always welcome! Please submit your patches via LineageOS Gerrit!
+If you want to automate the full build process, starting from setting up the Android build environment to the start of the build, just follow the below steps:
 
-Simply follow our guide on [how to submit patches](https://wiki.lineageos.org/submitting-patch-howto.html).
+1. Clone the build script.
+```bash
+wget https://raw.githubusercontent.com/kasun-97/scripts/master/android/build_los-20-personal.sh
+```
 
-To view the status of your and others' patches, visit [LineageOS Gerrit Code Review](https://review.lineageos.org/).
+2. Change the below two lines inside `build_los-20-personal.sh` accordingly.
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "youremail@email.com"
+```
 
+3. Make the scripts executable.
+```bash
+chmod +x build_los-20-personal.sh
+```
 
-Buildbot
---------
+4. Execute the sript.
+```bash
+./build_los-20-personal.sh
+```
 
-All supported devices are built weekly and periodically as changes are committed to ensure the source trees remain buildable.
+5. Relax until the process is completed.
 
-You can view the current build statuses at [LineageOS Buildkite](https://buildkite.com/lineageos).
-
-Builds produced weekly by the buildbot can be downloaded from [LineageOS downloads](https://download.lineageos.org/).
+(You may get a dialog asking for auto restart services when updating. Just press enter and go ahead in that case.)
