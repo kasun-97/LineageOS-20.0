@@ -8,4 +8,5 @@
 	  <project path="bionic" name="android_bionic" groups="pdk" remote="personal" />
 	  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="personal" />
 	  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="personal" />
+	  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" />
 </manifest>
