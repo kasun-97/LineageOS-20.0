@@ -1,0 +1,55 @@
+LineageOS-20.0
+Build type: Personal
+Maintianer: Kasun Herath
+Device: Xiaomi Redmi Note10 Pro (sweet)
+
+====================
+     12-09-2023
+====================
+Notes:
+- Initial build
+
+====================
+     13-09-2023
+====================
+Changelog:
+- Added MiUI camera
+
+====================
+     16-09-2023
+====================
+Changelog:
+- SystemUI: Introduce DataSwitchTile
+- SystemUI: Add delete action to screen recorder notification 
+- Deprioritize important developer notifications
+- SettingLib: Add deep sleep info to uptime preference
+- Settings: Move over refresh rate controls to Display
+
+====================
+     17-09-2023
+====================
+Changelog:
+- debuggerd: Disable scudo usage
+
+====================
+     19-09-2023
+====================
+Changelog:
+- Merged September security patch
+- Add three-fingers-swipe to screenshot 
+- SystemUI: Add hotspot toggle in QS internet dialog
+- SUPL: Don't send IMSI / Phone number to SUPL server
+- SystemUI: add burnIn protection 
+- CarrierConfigManager: Enable LTE+ icon
+
+====================
+    26-09-2023
+====================
+Changelog:
+- LineageOS source updates (ln8000 should work now, bump android version to android-13.0.0_r75)
+
+====================
+    28-09-2023
+====================
+Changelog:
+- Added OnePlus Dolby (and dropped AudioFX)
