@@ -8,9 +8,9 @@ This LineageOS (LOS) fork is for my personal builds for Redmi Note 10 Pro (sweet
 Difference between LOS official repo and this repo?
 ---------------
 
-There are some changes we need to make to a ROM source in order to add some useful features. But, LOS official will never merge those changes so we have to do it ourselves. In my case for sweet, I needed to make MiUi camera work on the official LOS ROM. I may add some useful features in the future when I have time. But this repo will be updated alongeside official LOS updates regardless adding additions. Below is a list of extra features I have currently added.  
+There are some changes we need to make to a ROM source in order to add some useful features. But, LOS official will never merge those changes so we have to do it ourselves. In my case for sweet, I needed to make MiUi camera work on the official LOS ROM. I may add some useful features in the future when I have time. But this repo will be updated alongeside official LOS updates regardless adding additions. You can find the updated full changelog by clicking below link.  
 
-- Added support for MiUI camera.
+https://raw.githubusercontent.com/kasun-97/LineageOS-20.0/los-20/changelog.txt
 
 
 Getting started
