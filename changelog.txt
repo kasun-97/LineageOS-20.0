@@ -53,3 +53,10 @@ Changelog:
 ====================
 Changelog:
 - Added OnePlus Dolby (and dropped AudioFX)
+
+====================
+    30-09-2023
+====================
+Changelog:
+- Added signature spoofing support (only for microG)
+- Increased system and product partition sizes
