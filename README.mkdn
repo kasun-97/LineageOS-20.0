@@ -54,9 +54,3 @@ chmod +x build_los-20-personal.sh
 5. Relax until the process is completed.
 
 (You may get a dialog asking for auto restart services when updating. Just press enter and go ahead in that case.)
-
----
-If you face any errors while compiling the kernel just make sure you have installed dependencies for kernel building.
-```
-sudo apt install -y make cmake automake autoconf llvm lld lldb clang gcc binutils bison perl gperf gawk flex bc python3 python2 zstd openssl unzip cpio bc bison build-essential ccache liblz4-tool libsdl1.2-dev libstdc++6 libxml2 libxml2-utils lzop pngcrush schedtool squashfs-tools xsltproc zlib1g-dev libncurses5-dev bzip2 gcc-aarch64-linux-gnu gcc-arm-linux-gnueabihf gcc-arm-linux-gnueabi 
-```
