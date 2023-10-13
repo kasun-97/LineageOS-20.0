@@ -1,11 +1,12 @@
-LineageOS
+LineageOS-20.0
 ===========
+
+Description
+---------------
+This is a fork of LineageOS (LOS) for the purpose of bringing some useful additions, but not a lot. Currently, I am building this for my primary device - Redmi Note 10 Pro (sweet) but it will work for other devices as well.
 
 Getting started
 ---------------
-
-To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
-
 To initialize your local repository using the LineageOS trees, use a command like this:
 ```
 repo init -u https://github.com/Lineage-20-0/android.git -b lineage-20.0 --git-lfs
@@ -14,23 +15,36 @@ Then to sync up:
 ```
 repo sync
 ```
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
+
+Build automatically
+---------------
+> Note: If you are building for a devices other than **sweet**, make sure to place your device specific trees accordingly.
+
+If you want to automate the full build process, starting from setting up the Android build environment to the start of the build, just follow the below steps:
+
+1. Clone the build script.
+```bash
+wget https://raw.githubusercontent.com/kasun-97/scripts/master/android/build_LineageOS-20.0.sh
+```
+
+2. Change the below two lines inside `build_LineageOS-20.0.sh` accordingly.
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "youremail@email.com"
+```
+
+3. Make the scripts executable.
+```bash
+chmod +x build_LineageOS-20.0.sh
+```
+
+4. Execute the sript.
+```bash
+./build_LineageOS-20.0.sh
+```
+
+5. Relax until the process is completed.
+
+(You may get a dialog asking for auto restart services when updating. Just press enter and go ahead in that case.)
 
 
-Submitting patches
-------------------
-Patches are always welcome! Please submit your patches via LineageOS Gerrit!
-
-Simply follow our guide on [how to submit patches](https://wiki.lineageos.org/submitting-patch-howto.html).
-
-To view the status of your and others' patches, visit [LineageOS Gerrit Code Review](https://review.lineageos.org/).
-
-
-Buildbot
---------
-
-All supported devices are built weekly and periodically as changes are committed to ensure the source trees remain buildable.
-
-You can view the current build statuses at [LineageOS Buildkite](https://buildkite.com/lineageos).
-
-Builds produced weekly by the buildbot can be downloaded from [LineageOS downloads](https://download.lineageos.org/).
